@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="EduHelper 개인정보 처리방침">
+  <meta name="eduhelper-policy-version" content="2026-07-17-v1">
   <title>EduHelper 개인정보 처리방침</title>
   <style>
     :root {
       color-scheme: light dark;
-      --background: #f4f7f8;
+      --background: #f3f6f7;
       --surface: #ffffff;
       --text: #172126;
       --muted: #586970;
@@ -29,9 +30,7 @@
       }
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -45,54 +44,28 @@
     }
 
     main {
-      width: min(920px, calc(100% - 32px));
+      width: min(960px, calc(100% - 32px));
       margin: 32px auto;
       padding: clamp(24px, 5vw, 56px);
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 20px;
+      border-radius: 8px;
       box-shadow: 0 12px 36px rgba(12, 32, 39, 0.08);
     }
 
-    h1,
-    h2,
-    h3 {
-      line-height: 1.35;
-      letter-spacing: -0.025em;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(1.85rem, 5vw, 2.6rem);
-    }
-
+    h1, h2, h3 { line-height: 1.35; letter-spacing: 0; }
+    h1 { margin: 0 0 12px; font-size: clamp(1.85rem, 5vw, 2.6rem); }
     h2 {
       margin: 2.5rem 0 0.8rem;
       padding-top: 0.5rem;
-      font-size: 1.42rem;
       color: var(--accent);
       border-top: 1px solid var(--border);
+      font-size: 1.42rem;
     }
-
-    h3 {
-      margin: 1.7rem 0 0.55rem;
-      font-size: 1.08rem;
-    }
-
-    p,
-    ul {
-      margin: 0.7rem 0;
-    }
-
-    li + li {
-      margin-top: 0.35rem;
-    }
-
-    a {
-      color: var(--accent);
-      text-underline-offset: 0.18em;
-    }
-
+    h3 { margin: 1.7rem 0 0.55rem; font-size: 1.08rem; }
+    p, ul, ol { margin: 0.7rem 0; }
+    li + li { margin-top: 0.35rem; }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
     code {
       padding: 0.08em 0.32em;
       border: 1px solid var(--border);
@@ -101,71 +74,34 @@
       font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
       font-size: 0.92em;
     }
-
-    .meta {
-      margin: 0 0 1.6rem;
-      padding: 0;
-      color: var(--muted);
-      list-style: none;
-    }
-
+    .meta { margin: 0 0 1.6rem; padding: 0; color: var(--muted); list-style: none; }
     .summary {
       padding: 1rem 1.1rem;
       background: var(--notice);
       border-left: 4px solid var(--accent);
       border-radius: 8px;
     }
-
     .table-wrap {
       max-width: 100%;
       margin: 1rem 0;
       overflow-x: auto;
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 8px;
     }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 650px;
-    }
-
-    th,
-    td {
+    table { width: 100%; border-collapse: collapse; min-width: 820px; }
+    th, td {
       padding: 0.75rem 0.85rem;
       text-align: left;
       vertical-align: top;
       border-bottom: 1px solid var(--border);
     }
-
-    th {
-      background: var(--background);
-      font-weight: 650;
-    }
-
-    tr:last-child td {
-      border-bottom: 0;
-    }
-
-    footer {
-      margin-top: 2.8rem;
-      padding-top: 1rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
+    th { background: var(--background); font-weight: 650; }
+    tr:last-child td { border-bottom: 0; }
+    footer { margin-top: 2.8rem; padding-top: 1rem; color: var(--muted); border-top: 1px solid var(--border); }
 
     @media (max-width: 560px) {
-      main {
-        width: 100%;
-        margin: 0;
-        border: 0;
-        border-radius: 0;
-        box-shadow: none;
-      }
-
-      body {
-        background: var(--surface);
-      }
+      main { width: 100%; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+      body { background: var(--surface); }
     }
   </style>
 </head>
@@ -174,184 +110,199 @@
     <header>
       <h1>EduHelper 개인정보 처리방침</h1>
       <ul class="meta">
-        <li><strong>시행일:</strong> 2026년 7월 14일</li>
-        <li><strong>최종 수정일:</strong> 2026년 7월 14일</li>
-        <li><strong>적용 대상:</strong> Microsoft Store 등을 통해 배포되는 EduHelper 데스크톱 앱(아래 DPAPI 보호는 Windows 1.7.0.0 이상)</li>
+        <li><strong>시행일:</strong> 2026년 7월 17일</li>
+        <li><strong>최종 수정일:</strong> 2026년 7월 17일</li>
+        <li><strong>적용 대상:</strong> Microsoft Store 등을 통해 배포되는 EduHelper 데스크톱 앱(Windows 내부 저장 보호는 1.7.0.0 이상)</li>
       </ul>
-      <p class="summary">EduHelper(이하 “앱”)는 교사의 업무를 돕는 로컬 중심 데스크톱 앱입니다. 앱의 주요 작업 데이터는 사용 중인 PC에 저장되지만, 학교 검색·급식·학사일정·공휴일 조회와 사용자가 선택한 외부 링크 또는 나이스 바로 입력 기능에는 네트워크나 다른 프로그램이 사용됩니다. 따라서 앱은 <strong>오프라인 전용 프로그램이 아닙니다.</strong></p>
+      <p class="summary">EduHelper는 교사가 학교 업무에 사용하는 <strong>로컬 중심 데스크톱 소프트웨어</strong>입니다. 학생 명단·메모·일정 등 주요 작업자료는 기본적으로 사용 중인 PC에 저장되며 개발자 운영 서버로 전송되지 않습니다. 학교 검색·급식·학사일정·공휴일 조회, 사용자가 직접 여는 외부 페이지, 나이스 바로 입력에는 네트워크 또는 다른 프로그램이 사용되므로 오프라인 전용 프로그램은 아닙니다.</p>
+      <p>학교가 교육과정 또는 학교 업무에 앱을 도입해 학생자료를 입력하는 경우 해당 학교 또는 교육기관이 수집 목적·법적 근거·보유기간·권리행사 처리를 결정하는 개인정보처리자가 됩니다. 앱 운영자 CulCher는 사용자의 PC에 저장된 학생자료를 원격으로 열람하거나 임의로 삭제할 수 없습니다.</p>
     </header>
 
-    <section aria-labelledby="information">
-      <h2 id="information">1. 앱이 처리하는 정보</h2>
-      <p>앱은 사용자가 기능을 이용할 때 다음 정보를 처리할 수 있습니다.</p>
-      <div class="table-wrap" role="region" aria-label="처리 정보 표" tabindex="0">
+    <section aria-labelledby="items">
+      <h2 id="items">1. 처리 목적, 항목, 위치와 보유기간</h2>
+      <div class="table-wrap" role="region" aria-label="개인정보 처리 항목 표" tabindex="0">
         <table>
           <thead>
             <tr>
               <th scope="col">구분</th>
-              <th scope="col">예시</th>
-              <th scope="col">기본 처리 위치</th>
+              <th scope="col">처리 항목</th>
+              <th scope="col">처리 목적</th>
+              <th scope="col">기본 위치</th>
+              <th scope="col">기본 보유·삭제 기준</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>교사 설정</td>
-              <td>담당 역할, 담당 학년·교과, 수업 알림 시간표, 도구 배치·표시 설정, 테마·스킨 설정</td>
+              <td>교사·학교 설정</td>
+              <td>담당 역할·학년·교과, 수업 알림, 선택 학교명·학교/교육청 코드, 도구 배치</td>
+              <td>맞춤 시작 화면, 급식·학사일정 조회, 수업 알림</td>
               <td>사용자 PC</td>
+              <td>사용자가 설정을 바꾸거나 모든 업무데이터를 삭제할 때까지</td>
             </tr>
             <tr>
-              <td>학교 정보</td>
-              <td>검색어로 입력한 학교명, 선택한 학교명·학교 코드·교육청 코드, 나이스가 제공한 학교 주소·전화번호·홈페이지, 학사일정 캐시</td>
-              <td>사용자 PC 및 아래에 적은 나이스 Open API</td>
-            </tr>
-            <tr>
-              <td>학생 및 학급 정보</td>
-              <td>학생 이름 또는 사용자가 부여한 식별자, 모둠·좌석·RPG 상태, 발표 순서, 과제 확인, 학생 뽑기 기록, 학생 관련 메모와 연결 정보</td>
+              <td>학생 명단</td>
+              <td>학생 번호와 이름 또는 별칭. 성별·사회성·주역할·보조역할·티어는 선택</td>
+              <td>명단 공유, 학생 뽑기, 발표 순서, 과제 확인, 모둠·좌석 배치</td>
               <td>사용자 PC</td>
+              <td>기본 운영 기준은 해당 학년도. 매년 3월 1일 이후 정리를 안내하며 목적 달성 또는 다음 학년도 명단 등록 전 삭제 권장. 자동 삭제는 아니며 학교가 적법한 별도 기간을 정할 수 있음</td>
             </tr>
             <tr>
-              <td>교사 작성 자료</td>
-              <td>메모, 일정, 평가·생활기록부 보조 문장, 알림장 문구, 휴지통·보관함·변경 기록</td>
+              <td>학생 활동·연결 기록</td>
+              <td>모둠·좌석, RPG 경험치·보상·경고·장부, 발표·뽑기·과제 기록, 학생-메모 연결, 복구점</td>
+              <td>수업 운영, 학생 활동 확인, 작업 복구</td>
               <td>사용자 PC</td>
+              <td>학생 명단과 같은 기준. 학생자료 완전삭제 시 연결 메모·장부·복구자료·내부 출력물까지 함께 삭제</td>
             </tr>
             <tr>
-              <td>사용자가 불러오거나 내보낸 자료</td>
-              <td>클립보드에서 가져온 명단·문장, 사용자가 저장한 CSV·PDF·이미지 등의 파일</td>
-              <td>사용자 PC 및 사용자가 선택한 저장 위치</td>
+              <td>교사 작성 업무자료</td>
+              <td>메모, 일정, 평가·생활기록부 보조 문장, 알림장, 휴지통·보관함·변경 기록</td>
+              <td>교사 업무 작성·관리·복구</td>
+              <td>사용자 PC</td>
+              <td>사용자가 항목 또는 모든 업무데이터를 삭제할 때까지</td>
             </tr>
             <tr>
-              <td>화면 캡처</td>
-              <td>사용자가 화면 캡처·고정을 실행했을 때의 화면 이미지</td>
+              <td>로컬 맞춤 추천(선택)</td>
+              <td>동의 상태·시각, 도구별 날짜·시간대 실행 횟수, 숨긴 추천과 기한</td>
+              <td>자주 쓰는 도구를 PC 안에서 추천</td>
+              <td>사용자 PC</td>
+              <td>사용 집계 30일, 숨김 선택 7일. 설정에서 즉시 삭제 가능</td>
+            </tr>
+            <tr>
+              <td>학교 조회·공개 일정</td>
+              <td>학교 검색어, 학교·교육청 코드, 조회 날짜, 공개 급식·학사일정·공휴일 응답</td>
+              <td>사용자가 요청한 학교 정보 표시</td>
+              <td>사용자 PC와 해당 공개 API</td>
+              <td>학교 연결·업무데이터 삭제 또는 새 응답으로 대체할 때까지</td>
+            </tr>
+            <tr>
+              <td>가져오기·내보내기</td>
+              <td>불러온 CSV·클립보드 내용, 저장한 JSON·CSV·PDF·HTML·ICS·PNG</td>
+              <td>자료 입력, 열람 사본, 인쇄·공유</td>
+              <td>사용자 PC와 사용자가 고른 위치</td>
+              <td>앱 내부 사본은 해당 삭제 기능으로 정리. 외부 위치 파일은 사용자가 직접 삭제할 때까지</td>
+            </tr>
+            <tr>
+              <td>화면 캡처·고정</td>
+              <td>사용자가 캡처를 실행한 순간의 화면 이미지</td>
+              <td>화면 일부 고정·참고</td>
               <td>실행 중 메모리</td>
+              <td>선택 화면·고정창을 닫거나 앱을 종료할 때 해제</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p>앱은 학생 정보를 직접 요구하는 온라인 회원가입 기능을 제공하지 않습니다. 다만 교사가 앱의 명단, 메모, RPG, 과제 확인 등의 기능에 학생 정보를 입력하면 해당 정보가 로컬 작업 데이터에 포함될 수 있습니다.</p>
+      <p>학생명단 가져오기는 <strong>번호와 이름 또는 별칭만 필수</strong>이며 성별·사회성·역할·티어는 비워 둘 수 있습니다. 확인창은 실명 대신 <code>1번 학생</code>과 같은 번호 별칭 저장을 기본으로 선택하고, 클립보드 가져오기 뒤 명단 지우기도 기본으로 선택합니다.</p>
+      <p>민감정보, 주민등록번호, 상세 건강·상담·가족 정보처럼 수업 운영에 불필요한 정보는 입력하지 마세요. 학교는 목적에 필요한 최소 항목만 정해 사용해야 합니다.</p>
     </section>
 
-    <section aria-labelledby="storage">
-      <h2 id="storage">2. 로컬 저장 위치와 보안</h2>
-      <p>주요 작업 데이터는 Godot의 앱별 <code>user://</code> 폴더에 저장됩니다. 운영체제에서의 실제 경로는 사용자 계정과 설치 방식에 따라 달라집니다.</p>
+    <section aria-labelledby="security">
+      <h2 id="security">2. 로컬 저장과 안전성 확보조치</h2>
+      <p>주요 작업자료는 Godot의 앱별 <code>user://</code> 폴더에 저장됩니다. 앱의 <strong>설정 &gt; 데이터·심의 센터 &gt; 앱 데이터 폴더 열기</strong>에서 실제 위치를 확인할 수 있습니다.</p>
       <ul>
-        <li><code>desk_live.json</code>: 메모, 일정, 교사·학교 설정, 학생 명단과 각 도구의 작업 상태 등</li>
-        <li><code>rpg_recovery.json</code>: RPG 복구용 스냅샷</li>
-        <li>보호 대상 내부 파일: <code>desk_live.json</code>, <code>rpg_recovery.json</code>, RPG 복구 백업, 사용자가 별도로 설정한 나이스 API 인증키, RPG 검색어·태그 프리셋과 구버전의 내부 메모·디지털 책상 저장 파일</li>
-        <li>그 밖의 비민감 앱 설정 파일: 테마, 소리, 도구별 화면 상태 등</li>
+        <li><code>desk_live.json</code>: 교사·학교 설정, 학생 명단과 활동기록, 메모, 일정, 휴지통·보관함 등</li>
+        <li><code>rpg_recovery.json</code>: RPG 작업 복구 스냅샷</li>
+        <li>그 밖의 보호 대상: RPG 복구 백업, 사용자가 설정한 나이스 API 인증키, RPG 검색·태그 프리셋, 구버전 내부 저장파일</li>
+        <li>비업무 환경설정: 테마, 소리, 스킨, 도움말 표시 여부 등</li>
       </ul>
-      <p>EduHelper Windows 1.7.0.0 이상 배포판은 위 보호 대상 내부 파일을 Windows 데이터 보호 API(DPAPI)의 현재 사용자 범위로 암호화합니다. 1.7.0.0보다 앞선 버전은 일부 내부 작업 파일을 평문으로 저장했을 수 있습니다. 암호문은 해당 Windows 사용자 계정과 앱이 지정한 파일 용도에 묶이므로, 일반적으로 다른 사용자 계정이나 다른 PC로 복사해서는 해독할 수 없습니다. 이 보호는 Windows 계정 보안 자체를 대신하지 않으므로 공용 PC에서는 계정을 분리하고 화면 잠금과 디스크 암호화도 함께 사용해 주세요.</p>
-      <p>1.7.0.0 이상 앱이 암호화 기능 적용 전에 만들어진 정상 평문 파일을 발견하면, 현재 저장 파일과 구버전에서 사용한 정해진 내부 저장 경로만 검사합니다. 앱은 먼저 같은 내용을 담은 암호화 백업을 만들고 복호화·길이·무결성과 해당 파일 형식을 확인한 뒤 본 파일을 교체합니다. 어느 단계에서든 실패하면 기존 본 파일을 바꾸거나 초기화하지 않고 해당 파일의 저장을 중단합니다. 주요 작업 저장소를 안전하게 열 수 없으면 빈 상태에서 새 작업이 유실되지 않도록 안내 후 앱을 종료합니다. 이관 전 백업도 평문이 아니라 같은 Windows 사용자 범위로 암호화됩니다.</p>
-      <p>사용자가 명시적으로 저장한 CSV·PDF·HTML·ICS·PNG 등의 내보내기 파일은 Excel, 브라우저, PDF 뷰어 등에서 열 수 있도록 DPAPI 내부 저장 대상에 포함하지 않습니다. 해당 파일은 앱의 삭제 기능과 별개이므로 저장 위치, 공유 범위와 삭제를 사용자가 직접 관리해야 합니다.</p>
+      <p>EduHelper Windows 1.7.0.0 이상 배포판은 주요 내부 저장파일을 Windows 데이터 보호 API(DPAPI)의 현재 사용자 범위로 암호화합니다. 암호화·복호화·무결성 검증·원자적 저장 중 하나라도 실패하면 기존 본 파일을 유지하고 저장을 차단합니다. 주요 저장소를 안전하게 열 수 없을 때에는 빈 상태로 덮어쓰지 않도록 안내 후 앱을 종료합니다.</p>
+      <p>구버전 평문 내부파일은 정해진 경로와 자료 구조를 확인하고 보호된 이관 전 백업을 만든 뒤 검증을 통과한 경우에만 교체합니다. Windows 계정 분리, 화면 잠금과 디스크 암호화는 별도로 사용해 주세요.</p>
+      <p>사용자가 직접 저장한 JSON·CSV·PDF·HTML·ICS·PNG 파일은 다른 프로그램에서 열 수 있도록 일반 파일로 저장되며 DPAPI 보호 대상이 아닙니다. 민감자료가 들어간 파일은 안전한 위치에 두고 목적이 끝나면 직접 삭제해야 합니다.</p>
     </section>
 
     <section aria-labelledby="network">
-      <h2 id="network">3. 네트워크 요청과 제3자 서비스</h2>
-      <p>앱은 다음 서비스에 연결할 수 있습니다. 일반적인 인터넷 통신 과정에서 각 서비스 제공자는 IP 주소, 접속 시각 등 표준 네트워크 정보를 처리할 수 있으며, 그 처리는 각 제공자의 정책을 따릅니다.</p>
-
-      <h3>나이스 교육정보 개방 포털 Open API</h3>
-      <p>호스트: <code>https://open.neis.go.kr</code></p>
-      <div class="table-wrap" role="region" aria-label="나이스 Open API 표" tabindex="0">
+      <h2 id="network">3. 네트워크 요청과 외부 서비스</h2>
+      <p>외부 서비스 제공자는 통신 과정에서 IP 주소와 접속 시각 같은 표준 접속정보를 처리할 수 있습니다. 앱이 자동으로 로컬 학생명단이나 학생별 기록을 아래 조회 서비스로 보내지는 않습니다.</p>
+      <div class="table-wrap" role="region" aria-label="네트워크 요청 표" tabindex="0">
         <table>
           <thead>
-            <tr>
-              <th scope="col">기능</th>
-              <th scope="col">API</th>
-              <th scope="col">전송되는 주요 값</th>
-            </tr>
+            <tr><th scope="col">기능·서비스</th><th scope="col">호스트 또는 방식</th><th scope="col">앱에서 전송되는 값</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td>학교 검색</td>
-              <td><code>schoolInfo</code></td>
-              <td>사용자가 입력한 학교명 검색어, 응답 형식·페이지 값, 사용자가 별도로 설정한 경우 API 인증키</td>
-            </tr>
-            <tr>
-              <td>급식 조회</td>
-              <td><code>mealServiceDietInfo</code></td>
-              <td>교육청 코드, 학교 코드, 조회 날짜, 식사 구분, 사용자가 별도로 설정한 경우 API 인증키</td>
-            </tr>
-            <tr>
-              <td>학사일정 조회</td>
-              <td><code>SchoolSchedule</code></td>
-              <td>교육청 코드, 학교 코드, 조회 시작·종료 날짜, 사용자가 별도로 설정한 경우 API 인증키</td>
-            </tr>
+            <tr><td>나이스 학교 검색</td><td><code>open.neis.go.kr</code>의 <code>schoolInfo</code></td><td>학교명 검색어, 응답·페이지 값, 사용자가 설정한 경우 API 인증키</td></tr>
+            <tr><td>나이스 급식 조회</td><td>같은 호스트의 <code>mealServiceDietInfo</code></td><td>교육청 코드, 학교 코드, 날짜·식사 구분, 사용자가 설정한 경우 API 인증키</td></tr>
+            <tr><td>나이스 학사일정</td><td>같은 호스트의 <code>SchoolSchedule</code></td><td>교육청 코드, 학교 코드, 조회 시작·종료일, 사용자가 설정한 경우 API 인증키</td></tr>
+            <tr><td>대한민국 공휴일</td><td><code>p03-calendars.icloud.com</code> 공개 iCalendar</td><td>공개 캘린더 파일 요청. 학생명단·메모는 보내지 않음</td></tr>
+            <tr><td>Microsoft Store</td><td>설치·업데이트·선택형 디지털 콘텐츠 구매</td><td>Microsoft가 계정·거래·결제·라이선스 정보를 자체 정책에 따라 처리. 앱 운영자는 전체 결제수단을 저장하지 않음</td></tr>
+            <tr><td>외부 도움말·양식·검색</td><td>사용자가 버튼을 눌러 Google 양식·도움말, YouTube 검색, Microsoft Store, GitHub 등의 주소를 브라우저로 열기</td><td>사용자가 입력한 검색어 또는 선택한 URL이 해당 서비스에 전달될 수 있음. 앱이 로컬 학생명단을 자동 첨부하거나 업로드하지 않음</td></tr>
           </tbody>
         </table>
       </div>
-      <p>나이스 Open API는 앱에 인증키를 내장하지 않고도 조회할 수 있으며, 사용자가 자신의 인증키를 별도로 설정한 경우에만 요청에 함께 보냅니다. 이 조회 요청에는 앱에 저장된 학생 명단이나 학생별 기록을 포함하지 않습니다. 선택한 학교 정보와 받아 온 학사일정은 빠른 표시를 위해 사용자 PC에 저장될 수 있으며, 급식 결과는 현재 사용 중인 화면에 표시됩니다.</p>
-
-      <h3>Apple 공개 대한민국 공휴일 캘린더</h3>
-      <p>호스트: <code>https://p03-calendars.icloud.com</code></p>
-      <p>달력의 대한민국 공휴일을 가져오기 위해 공개 iCalendar 파일을 요청합니다. 앱의 학생 명단, 메모 또는 교사 작성 자료를 요청 본문으로 보내지 않습니다. 받아 온 공휴일과 조회 범위·시각은 로컬 캐시로 저장될 수 있습니다.</p>
-
-      <h3>Microsoft Store</h3>
-      <p>Microsoft Store를 통한 설치, 업데이트 또는 유료 디지털 콘텐츠 구매가 제공되는 경우 Microsoft가 계정, 거래, 결제 및 라이선스 정보를 처리합니다. 앱 개발자는 사용자의 전체 결제수단 정보를 직접 저장하지 않습니다. 앱에는 구매한 콘텐츠의 사용 가능 여부와 스킨 선택 상태가 저장될 수 있습니다.</p>
-
-      <h3>사용자가 직접 여는 외부 페이지</h3>
-      <p>앱의 버튼을 눌렀을 때 기본 브라우저에서 Microsoft Store, GitHub 도움말·업데이트 내역, Google 설문지·스프레드시트, 인디스쿨, Canva 도움 자료, YouTube 검색 등의 페이지가 열릴 수 있습니다. 페이지를 여는 것은 사용자의 명시적인 동작이며, 이후 입력하거나 제출하는 정보에는 해당 사이트의 개인정보 처리방침이 적용됩니다.</p>
+      <p>Google 학생명단 양식은 선택 기능입니다. 기본 경로는 로컬 CSV 양식 저장과 CSV 불러오기입니다. 앱은 로컬 명단을 Google에 자동 업로드하지 않습니다. 학교가 Google Drive 개인 사본에 학생자료를 입력하려면 기관의 클라우드 이용기준, 계정·공유범위, 국외 처리 여부와 보유기간을 별도로 검토해야 합니다.</p>
+      <p>외부 검색어, URL, QR 내용에는 학생 이름이나 민감정보를 입력하지 않는 것을 권장합니다.</p>
     </section>
 
-    <section aria-labelledby="neis">
-      <h2 id="neis">4. 나이스 바로 입력과 로컬 자동화</h2>
-      <p>나이스 바로 입력은 사용자가 문장 입력을 실행할 때 동작하며, 화면의 나이스 ON/OFF 설정으로 끌 수 있는 기능입니다.</p>
-      <ul>
-        <li>Windows에서는 앱이 로컬 PowerShell 보조 프로그램을 실행합니다. 이 프로그램은 실행 중인 브라우저 창과 창 제목, 현재 포커스된 입력 요소를 로컬에서 확인하고, 클립보드 붙여넣기 또는 Windows UI Automation을 이용해 선택한 나이스 입력 칸에 문장을 입력합니다.</li>
-        <li>지원 환경에 따라 앱이 <code>127.0.0.1</code>의 로컬 루프백 서버와 브라우저 자동화 연결을 사용할 수 있습니다. 입력 문장은 이 PC 안에서 앱과 로컬 보조 프로그램 사이에 전달됩니다. <code>127.0.0.1</code> 연결은 개발자가 운영하는 인터넷 서버가 아닙니다.</li>
-        <li>자동화 과정에서 문장은 클립보드에 기록될 수 있습니다. 입력 후에는 클립보드에 해당 문장이 남을 수 있으므로 공용 PC에서는 다른 내용으로 덮어쓰거나 클립보드 기록을 지워 주세요.</li>
-        <li>문장이 사용자가 로그인한 나이스 웹페이지에 입력된 이후의 저장·전송은 나이스와 사용 기관의 정책 및 사용자의 최종 제출 동작에 따릅니다.</li>
-      </ul>
-      <p>앱은 나이스 자동입력 문장을 개발자가 운영하는 서버로 보내지 않습니다.</p>
+    <section aria-labelledby="third-party">
+      <h2 id="third-party">4. 제3자 제공</h2>
+      <p>앱 운영자는 사용자 PC의 로컬 작업자료를 수집하지 않으므로 이를 제3자에게 판매·임대·제공하지 않습니다. 나이스 공개 API 조회에도 학생명단이나 학생별 활동기록을 포함하지 않습니다.</p>
+      <p>사용자가 내보낸 파일을 직접 공유하거나, 나이스 바로 입력으로 로그인된 나이스 화면에 문장을 입력하거나, 외부 사이트에 정보를 입력하는 행위는 학교 또는 사용자의 별도 처리입니다. 학교는 제3자 제공에 해당하는지와 법적 근거·고지 또는 동의 필요성을 자체적으로 확인해야 합니다.</p>
     </section>
 
-    <section aria-labelledby="clipboard-capture">
-      <h2 id="clipboard-capture">5. 클립보드와 화면 캡처</h2>
-      <h3>클립보드</h3>
-      <p>앱은 사용자가 붙여넣기·가져오기·복사·나이스 바로 입력을 실행할 때 클립보드를 읽거나 씁니다. 예를 들어 반편성 명단 또는 QR 입력값을 가져오고, 생성한 문장·명단·경로를 복사할 수 있습니다. 앱은 클립보드를 지속적으로 감시하지 않습니다.</p>
+    <section aria-labelledby="outsourcing">
+      <h2 id="outsourcing">5. 처리위탁</h2>
+      <p>앱 운영자는 로컬 학생자료를 보관·분석하는 서버를 운영하지 않으며 해당 자료 처리를 다른 사업자에게 위탁하지 않습니다. Microsoft Store 유통·결제와 사용자가 선택하는 Google Drive 등은 각 제공자의 자체 서비스이며 앱 운영자의 로컬 학생자료 처리위탁으로 사용되지 않습니다.</p>
+      <p>학교가 별도 클라우드, 공동 PC 관리, 원격지원 또는 백업 서비스를 이용하면 학교가 수탁자, 위탁업무, 안전조치와 공개·계약 의무를 별도로 관리해야 합니다.</p>
+    </section>
 
-      <h3>화면 캡처·고정</h3>
-      <p>사용자가 화면 캡처 도구 또는 단축키를 실행하면 영역 선택을 위해 현재 마우스가 있는 모니터 화면 전체를 일시적으로 메모리에 가져온 뒤, 사용자가 선택한 영역을 잘라 고정창에 표시합니다. 현재 구현은 캡처 이미지를 자동으로 파일에 저장하거나 외부 서버에 업로드하지 않습니다. 선택 화면과 고정창을 닫거나 앱을 종료하면 해당 이미지는 실행 중 메모리에서 해제됩니다. 운영체제에 따라 화면 기록 권한이 필요할 수 있습니다.</p>
+    <section aria-labelledby="children">
+      <h2 id="children">6. 만 14세 미만 아동 정보 보호</h2>
+      <p>앱은 교사용 도구이며 학생에게 회원가입이나 직접 입력을 요구하지 않습니다. 학교가 만 14세 미만 학생자료를 입력할 때에는 교육 관련 법령에 따른 공공업무 수행, 보호자 동의 등 적용 가능한 적법한 처리 근거를 먼저 확인해야 합니다. 동의가 필요한 처리라면 학교가 법정대리인 확인과 동의 기록을 관리하며 앱이 이를 대신 수집하지 않습니다.</p>
+      <p>학교는 실명 대신 번호 별칭을 우선 사용하고 선택 항목은 목적상 필요한 경우에만 입력해야 합니다. 아동의 권리행사 요청은 학교가 먼저 접수하고 앱의 로컬 열람·정정·삭제·처리정지 기능으로 실행할 수 있습니다.</p>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">7. 열람·정정·삭제·처리정지 절차</h2>
+      <p>학생, 보호자, 교사 등 정보주체는 해당 학교의 개인정보 보호 담당자에게 권리행사를 요청할 수 있습니다. 학교는 요청자의 신원·대리권, 처리 근거와 법령상 제한 사유를 확인한 뒤 기관 절차와 법정 기한에 따라 결과를 통지해야 합니다.</p>
+      <p>앱에서는 <strong>설정 &gt; 데이터·심의 센터</strong>에서 다음 조치를 수행할 수 있습니다.</p>
+      <ol>
+        <li><strong>현황:</strong> 학생 수, 연결 메모, 복구점, 휴지통·보관함과 앱 내부 출력물 수를 확인합니다.</li>
+        <li><strong>열람·정정:</strong> 전체 로컬 데이터의 JSON 사본을 내보내고 교사 설정·학생 명단·메모·일정 화면에서 정정합니다. JSON은 암호화되지 않은 일반 파일입니다.</li>
+        <li><strong>학생자료 처리정지:</strong> 학생자료 도구를 닫고 다시 열리지 않도록 차단합니다. 자료는 삭제되지 않으며 같은 화면에서 해제할 수 있습니다.</li>
+        <li><strong>학생자료 완전삭제:</strong> 명단·좌석·모둠·장부·도구 기록·복구점과 학생에 연결된 메모, 휴지통·보관함·변경기록, 앱 내부 학생 출력물과 보호 백업을 삭제합니다.</li>
+        <li><strong>모든 업무데이터 삭제:</strong> 교사 설정, 메모, 일정, 학생자료와 앱 소유 업무파일을 삭제합니다. 테마·소리·구매권한 같은 비업무 환경설정은 유지합니다.</li>
+      </ol>
+      <p>삭제 결과를 저장하지 못하면 메모리의 원래 자료를 복원하고 완료로 표시하지 않습니다. 앱 밖의 사용자 선택 폴더, 이메일, 메신저, Google Drive, 나이스 또는 별도 백업의 사본은 앱이 찾거나 원격 삭제할 수 없으므로 각 위치에서 별도로 처리해야 합니다.</p>
     </section>
 
     <section aria-labelledby="retention">
-      <h2 id="retention">6. 보유 기간과 삭제 방법</h2>
-      <p>개발자가 운영하는 서버에는 앱의 로컬 작업 데이터를 보관하지 않습니다. 사용자 PC의 데이터는 사용자가 앱 안에서 삭제하거나 앱 데이터 폴더를 지울 때까지 남을 수 있습니다.</p>
+      <h2 id="retention">8. 보유기간 종료와 파기</h2>
       <ul>
-        <li>메모 등 삭제 항목은 먼저 휴지통에 남을 수 있으며, <strong>휴지통 비우기(완전삭제)</strong>를 실행해야 휴지통 기록에서 제거됩니다.</li>
-        <li>보관함의 삭제 기록·증빙·변경 기록은 보관함에서 별도로 영구 삭제할 수 있습니다.</li>
-        <li>새 학년 시작 시 앱은 학생 명단, 좌석·모둠 연결 및 일부 학생 도구 기록의 초기화를 안내할 수 있습니다.</li>
-        <li>새 학년 초기화가 모든 관련 데이터를 지우는 것은 아닙니다. 메모 본문, 휴지통·보관함, RPG 로그·복구 데이터, 사용자가 내보낸 파일 등은 별도로 확인하고 삭제해야 합니다.</li>
-        <li>학교 <strong>연결 해제</strong>는 현재 교사 설정과 급식 도구의 학교 연결 정보를 지웁니다. 이미 받아 둔 학사일정·공휴일 캐시는 앱 데이터 전체를 지우거나 새 데이터로 대체되기 전까지 남을 수 있습니다.</li>
-        <li>앱을 제거한 뒤에도 운영체제 정책에 따라 사용자 데이터 폴더나 사용자가 내보낸 파일이 남을 수 있습니다. 완전 삭제가 필요하면 운영체제의 앱 데이터 초기화 기능을 사용하거나 EduHelper의 사용자 데이터 폴더와 내보낸 파일을 직접 삭제해 주세요.</li>
+        <li>새 학년 안내에서 삭제를 선택하면 학생 명단, 연결 기록·메모, RPG 장부·복구자료, 학생 도구 기록과 앱 내부 학생 출력물·보호 백업을 함께 정리합니다.</li>
+        <li>학생자료 완전삭제와 모든 업무데이터 삭제는 관련 휴지통·보관함·변경기록까지 대상으로 합니다.</li>
+        <li>학교 연결 해제 뒤에도 학사일정·공휴일 캐시는 모든 업무데이터 삭제 또는 새 데이터 대체 전까지 남을 수 있습니다.</li>
+        <li>앱 제거 뒤에도 운영체제 정책에 따라 앱 데이터 폴더가 남을 수 있습니다. 제거 전 데이터·심의 센터에서 삭제하고 운영체제의 앱 데이터 초기화도 확인하세요.</li>
+        <li>외부 위치의 내보내기 파일과 외부 서비스 사본은 해당 위치에서 직접 삭제해야 합니다.</li>
       </ul>
-      <p>로컬 데이터는 개발자가 원격으로 열람하거나 대신 삭제할 수 없습니다. 삭제 방법에 도움이 필요하면 아래 연락처로 문의해 주세요. 문의 메일에는 실제 학생 명단이나 민감한 학생 정보를 첨부하지 않는 것을 권장합니다.</p>
     </section>
 
-    <section aria-labelledby="responsibility">
-      <h2 id="responsibility">7. 학생 정보 이용 시 사용자 책임</h2>
-      <p>앱은 교사가 학교 업무를 위해 사용하는 보조 도구입니다. 사용자는 소속 기관의 개인정보 보호 지침과 관련 법령에 따라 학생 정보를 입력할 적법한 권한이 있는지 확인하고, 필요한 최소 정보만 입력해야 합니다. 민감정보나 불필요한 가족·건강·상담 정보는 앱에 입력하지 않는 것을 권장합니다.</p>
+    <section aria-labelledby="local-automation">
+      <h2 id="local-automation">9. 클립보드, 화면 캡처와 나이스 바로 입력</h2>
+      <p>앱은 사용자가 붙여넣기·가져오기·복사·나이스 바로 입력을 실행할 때에만 클립보드를 읽거나 씁니다. 클립보드를 지속적으로 감시하지 않습니다. 학생명단 가져오기는 완료 뒤 클립보드 지우기를 기본 선택하지만 운영체제의 클립보드 기록이나 다른 기기의 동기화 사본은 사용자가 별도로 확인해야 합니다.</p>
+      <p>화면 캡처·고정은 사용자가 실행할 때 화면을 일시적으로 메모리에 가져와 선택 영역만 표시합니다. 이미지를 자동 파일 저장하거나 개발자 서버로 업로드하지 않습니다.</p>
+      <p>나이스 바로 입력은 사용자가 실행하고 나이스 ON/OFF로 끌 수 있습니다. Windows에서는 로컬 PowerShell·UI Automation 또는 <code>127.0.0.1</code> 루프백 연결을 이용할 수 있습니다. 로그인된 나이스 페이지에 입력된 뒤의 저장·제출은 나이스와 학교의 정책 및 사용자의 최종 동작에 따릅니다.</p>
     </section>
 
-    <section aria-labelledby="sale-analytics">
-      <h2 id="sale-analytics">8. 정보의 판매, 광고 및 분석</h2>
-      <p>앱 개발자는 앱에 입력된 개인정보를 판매하거나 임대하지 않습니다. 현재 앱에는 맞춤형 광고를 위한 추적 기능이나 개발자 운영 서버로 사용 기록을 자동 전송하는 분석 기능이 포함되어 있지 않습니다. 제3자 웹페이지나 Microsoft Store를 사용자가 이용할 때의 처리는 각 서비스의 정책을 따릅니다.</p>
-    </section>
-
-    <section aria-labelledby="changes">
-      <h2 id="changes">9. 방침 변경</h2>
-      <p>기능, 외부 서비스 또는 법적 요구사항이 바뀌면 이 방침도 수정될 수 있습니다. 중요한 변경은 이 문서의 최종 수정일과 앱 또는 배포 페이지의 안내를 통해 알립니다.</p>
+    <section aria-labelledby="analytics">
+      <h2 id="analytics">10. 판매, 광고와 분석</h2>
+      <p>앱 운영자는 앱에 입력된 개인정보를 판매하거나 임대하지 않습니다. 맞춤형 광고 추적이나 개발자 운영 서버로 사용기록을 자동 전송하는 분석 기능을 포함하지 않습니다. 선택형 로컬 맞춤 추천은 허용된 도구 실행 횟수만 PC에서 계산하며 메모·일정 본문, 학생명단·식별자, RPG 장부, 클립보드와 내보낸 파일 내용을 사용하지 않습니다.</p>
     </section>
 
     <section aria-labelledby="contact">
-      <h2 id="contact">10. 문의</h2>
+      <h2 id="contact">11. 개인정보 보호 담당자와 문의</h2>
       <ul>
-        <li><strong>운영자·개발자:</strong> CulCher</li>
+        <li><strong>앱 운영자 및 개인정보 보호 담당자:</strong> CulCher</li>
         <li><strong>이메일:</strong> <a href="mailto:eduhelper01@naver.com">eduhelper01@naver.com</a></li>
+        <li><strong>담당 범위:</strong> 앱의 저장·암호화·삭제 기능, 공개 방침과 기술적 사용방법</li>
       </ul>
-      <p>개인정보 또는 데이터 삭제 방법에 관한 문의를 보낼 때에는 학생 이름, 연락처, 생활기록 등 실제 개인정보를 본문이나 첨부파일에 포함하지 마세요.</p>
+      <p>학생 또는 보호자의 권리행사와 학교의 처리 근거·보유기간에 관한 결정은 먼저 해당 학교 개인정보 보호 담당자에게 요청하세요. 실제 학생명단이나 민감한 학생자료를 문의 메일에 첨부하지 마세요.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">12. 방침 변경</h2>
+      <p>기능, 외부 서비스 또는 법적 요구사항이 바뀌면 이 방침을 수정할 수 있습니다. 중요한 변경은 최종 수정일과 앱 또는 배포 페이지를 통해 알립니다.</p>
     </section>
 
     <footer>
-      <p>EduHelper 개인정보 처리방침 · 시행일 2026년 7월 14일</p>
+      <p>EduHelper 개인정보 처리방침 · 시행일 2026년 7월 17일</p>
     </footer>
   </main>
 </body>
