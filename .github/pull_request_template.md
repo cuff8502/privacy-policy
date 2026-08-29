@@ -20,10 +20,10 @@
 
 ## Validation
 
-- 호스트:
-- 저장소 루트:
+- 작업 기기 역할(기기 고유명 제외):
+- 저장소 canonical 상대경로:
 - Branch:
-- Worktree 절대경로:
+- Worktree slug(절대경로 비공개):
 - Exact candidate commit:
 - 실행 파일·entrypoint:
 - 설치·실행 명령:
@@ -49,7 +49,7 @@
 - [ ] 변경 범위가 PR 목적과 일치한다.
 - [ ] 최신 기본 branch와 exact candidate OID 및 충돌 여부를 확인했다.
 - [ ] 실행하지 않은 검증과 미해결 위험을 명시했다.
-- [ ] 실제 Worktree 실행 경로와 Preview 상태를 재확인했다.
+- [ ] 비공개 검증 기록에서 실제 Worktree 경로를 재확인했고, 공개 PR에는 상대 식별자와 Preview 상태만 기록했다.
 - [ ] 실행할 각 external action과 자동 후속 효과마다 같은 작업의 direct exact approval이 별도로 존재한다.
 
 ## External action status
