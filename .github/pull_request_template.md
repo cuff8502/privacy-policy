@@ -50,16 +50,18 @@
 - [ ] 최신 기본 branch와 exact candidate OID 및 충돌 여부를 확인했다.
 - [ ] 실행하지 않은 검증과 미해결 위험을 명시했다.
 - [ ] 비공개 검증 기록에서 실제 Worktree 경로를 재확인했고, 공개 PR에는 상대 식별자와 Preview 상태만 기록했다.
-- [ ] 실행할 각 external action과 자동 후속 효과마다 같은 작업의 direct exact approval이 별도로 존재한다.
+- [ ] 실행할 각 external action에는 같은 작업의 direct exact approval이 있고, push approval에는 모든 자동 후속 효과가 명시되어 있다.
 
 ## External action status
 
 - Exact candidate OID:
 - Topic branch push 상태와 direct exact approval:
+- Topic branch push의 예상·관찰 자동 후속 효과:
 - Local `main` 통합 상태와 direct exact approval:
 - GitHub `main` push 상태와 direct exact approval:
 - `main` push의 예상 자동 후속 효과:
 - Production·DB·게시 상태와 별도 direct exact approval:
-- PR Ready·GitHub PR merge 상태:
+- PR Ready 전환 상태와 승인 근거:
+- GitHub PR merge 상태와 direct exact approval:
 - Auto-merge: 비활성
 - Release: 수행하지 않음
