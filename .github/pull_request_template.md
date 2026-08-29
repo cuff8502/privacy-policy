@@ -60,7 +60,7 @@
 - Local `main` 통합 상태와 direct exact approval:
 - GitHub `main` push 상태와 direct exact approval:
 - `main` push의 예상 자동 후속 효과:
-- Production·DB·게시 상태와 별도 direct exact approval:
+- 독립 Production·DB·게시 action 상태와 별도 direct exact approval(push 자동 효과는 해당 push approval에 포함):
 - PR Ready 전환 상태와 승인 근거:
 - GitHub PR merge 상태와 direct exact approval:
 - Auto-merge: 비활성

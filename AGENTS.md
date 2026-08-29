@@ -16,7 +16,7 @@
 ## 작업과 승인 경계
 
 - 새 작업과 다른 기기의 작업 이어받기는 registry와 device policy에 따른 `development-ecosystem` start/resume 절차로 exact canonical default branch와 HEAD를 확인해 `codex/*` 전용 Worktree를 준비한다. 읽기 전용 조사·리뷰·렌더링 확인만으로는 새 PR을 만들지 않는다.
-- 승인된 구현 범위의 로컬 수정·검증·topic commit까지만 자동 진행한다. Non-force topic push, local `main` 통합, GitHub `main` push와 Pages 자동 게시, 기타 외부 게시와 삭제는 각 action마다 같은 작업의 direct exact approval이 있어야 한다. 승인된 topic push와 Draft PR 생성·본문 재확인까지 끝나야 `검토 대기 완료`라고 표시한다.
+- 승인된 구현 범위의 로컬 수정·검증·topic commit까지만 자동 진행한다. Non-force topic push와 local `main` 통합은 각각 해당 action의 direct exact approval이 있어야 한다. GitHub `main` push와 그 불가피한 Pages 자동 게시 효과는 모든 effect를 명시한 하나의 push exact approval로 처리하며, 독립 외부 게시와 삭제는 별도 action approval을 받는다. 승인된 topic push와 Draft PR 생성·본문 재확인까지 끝나야 `검토 대기 완료`라고 표시한다.
 - 기존 사용자 변경의 stash·삭제·이동은 수행하지 않는다. Force/history rewrite, 파괴적 migration, 영구 삭제와 복구 근거 삭제는 별도 device-bound local exact 절차 없이는 수행하지 않는다.
 - PR에는 변경한 조항, 정책 version·날짜 영향, EduHelper 동기본 비교, 로컬 렌더링 결과와 실제 게시 위험을 기록한다.
 - 실제 provider가 제공한 PR Preview가 없으면 `Preview 없음`이라고 쓰고 로컬 URL을 제공한다. `https://cuff8502.github.io/privacy-policy/privacy-policy.html`은 운영 URL이며 Preview가 아니다.
