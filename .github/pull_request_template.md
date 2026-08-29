@@ -21,8 +21,11 @@
 ## Validation
 
 - 호스트:
+- 저장소 루트:
 - Branch:
 - Worktree 절대경로:
+- Exact candidate commit:
+- 실행 파일·entrypoint:
 - 설치·실행 명령:
 - 자동 검사 명령과 실제 결과:
 - 수동 확인 항목과 실제 결과:
@@ -44,14 +47,19 @@
 ## Merge readiness
 
 - [ ] 변경 범위가 PR 목적과 일치한다.
-- [ ] 최신 기본 branch와의 차이 및 충돌 여부를 확인했다.
+- [ ] 최신 기본 branch와 exact candidate OID 및 충돌 여부를 확인했다.
 - [ ] 실행하지 않은 검증과 미해결 위험을 명시했다.
 - [ ] 실제 Worktree 실행 경로와 Preview 상태를 재확인했다.
-- [ ] Merge 전 사용자 승인을 확인했다.
+- [ ] 실행할 각 external action과 자동 후속 효과마다 같은 작업의 direct exact approval이 별도로 존재한다.
 
 ## External action status
 
-- Merge: 수행하지 않음
+- Exact candidate OID:
+- Topic branch push 상태와 direct exact approval:
+- Local `main` 통합 상태와 direct exact approval:
+- GitHub `main` push 상태와 direct exact approval:
+- `main` push의 예상 자동 후속 효과:
+- Production·DB·게시 상태와 별도 direct exact approval:
+- PR Ready·GitHub PR merge 상태:
 - Auto-merge: 비활성
 - Release: 수행하지 않음
-- Deploy: 수행하지 않음
