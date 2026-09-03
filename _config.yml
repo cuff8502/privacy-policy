@@ -1,0 +1,4 @@
+# Keep repository operations files out of the public GitHub Pages artifact.
+exclude:
+  - AGENTS.md
+  - .github
