@@ -1,5 +1,14 @@
 # EduHelper 개인정보 처리방침 저장소 규칙
 
+## 단순 수정과 검증 범위
+
+표시 문구·오타·주석·설명 문서만 바꾸며 법적 의미·동작·데이터·레이아웃이 그대로인 작업은
+관련 부분 확인 → 최소 수정 → diff 검토 → 해당 변경의 로컬 commit·안전한 main 반영으로 끝낸다.
+문구가 분기 조건·ID·저장 키가 아닌지 확인하고, 새 테스트·QA 파일·전체 검사·앱/서버 실행·
+보조 에이전트·광범위 문서 순회·별도 검증 보고서는 생략한다. 줄바꿈·잘림이 불확실하면 해당 화면만 확인한다.
+이 예외를 아래 일반 절차에 우선 적용한다. 법적 내용·개인정보·보안·게시 변경은 영향에 필요한 검증을
+유지하고, 방침을 고쳤을 때 EduHelper 동기본 비교도 유지한다. 실패한 검사나 보안 gate는 우회하지 않는다.
+
 ## 프로젝트와 배포 경계
 
 - 이 저장소는 공개용 EduHelper 개인정보 처리방침 단일 페이지 `privacy-policy.html`을 게시한다.
@@ -24,6 +33,6 @@
 ## 실행과 검증
 
 - package manager와 프로젝트 전용 test suite는 없다. 존재하지 않는 설치·테스트 명령을 추정하지 않는다.
-- `git diff --check`와 HTML parser 검사를 실행하고, 현재 Worktree를 로컬 HTTP server로 열어 `privacy-policy.html`의 HTTP 200 응답을 확인한다.
-- `privacy-policy.html` 변경이 있으면 제목·section heading·table·링크·시행일·version을 브라우저에서 확인하고 EduHelper 동기본과 전체 내용을 비교한다. 운영 규칙만 바꾸고 HTML blob이 base와 동일한 경우에는 byte 동일 근거와 브라우저 확인이 해당 없음을 기록한다.
+- `git diff --check`를 실행한다. HTML을 수정했으면 HTML parser 검사를 추가하고, 구조·링크·렌더링을 바꿨을 때 현재 Worktree를 로컬 HTTP server로 열어 `privacy-policy.html`의 HTTP 200 응답과 해당 화면을 확인한다.
+- `privacy-policy.html` 변경은 영향을 받는 제목·section heading·table·링크·시행일·version을 검토하고 EduHelper 동기본과 전체 내용을 비교한다. 운영 규칙만 바꾸고 HTML이 그대로면 HTML parser·서버·브라우저 검사는 생략하고 diff 확인만 짧게 보고한다.
 - production 페이지가 바뀌었다고 말하려면 별도 승인된 게시 후 실제 Pages 결과를 확인해야 한다.
